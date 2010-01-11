@@ -1,0 +1,27 @@
+<h1>New commentaar</h1>
+
+<% form_for(@commentaar) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :product %><br />
+    <%= f.text_field :product %>
+  </p>
+  <p>
+    <%= f.label :klant %><br />
+    <%= f.text_field :klant %>
+  </p>
+  <p>
+    <%= f.label :text %><br />
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', commentaars_path %>

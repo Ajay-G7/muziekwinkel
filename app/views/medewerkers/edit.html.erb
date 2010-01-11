@@ -1,0 +1,20 @@
+<h1>Editing medewerker</h1>
+
+<% form_for(@medewerker) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @medewerker %> |
+<%= link_to 'Back', medewerkers_path %>

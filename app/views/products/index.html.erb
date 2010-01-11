@@ -1,0 +1,36 @@
+<h1>Listing products</h1>
+
+<table>
+  <tr>
+    <th>Titel</th>
+    <th>Prijs</th>
+    <th>Jaar</th>
+    <th>Artiest</th>
+    <th>Genre</th>
+    <th>Lengte</th>
+    <th>Coverart</th>
+    <th>Tracknr</th>
+    <th>Type</th>
+  </tr>
+
+<% for product in @products %>
+  <tr>
+    <td><%=h product.titel %></td>
+    <td><%=h product.prijs %></td>
+    <td><%=h product.jaar %></td>
+    <td><%=h product.artiest %></td>
+    <td><%=h product.genre %></td>
+    <td><%=h product.lengte %></td>
+    <td><%=h product.coverart %></td>
+    <td><%=h product.tracknr %></td>
+    <td><%=h product.type %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New product', new_product_path %>

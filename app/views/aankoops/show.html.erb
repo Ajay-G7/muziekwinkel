@@ -1,0 +1,28 @@
+<p>
+  <b>Product:</b>
+  <%=h @aankoop.product %>
+</p>
+
+<p>
+  <b>Klant:</b>
+  <%=h @aankoop.klant %>
+</p>
+
+<p>
+  <b>Prijs:</b>
+  <%=h @aankoop.prijs %>
+</p>
+
+<p>
+  <b>Datum:</b>
+  <%=h @aankoop.datum %>
+</p>
+
+<p>
+  <b>Betaald:</b>
+  <%=h @aankoop.betaald %>
+</p>
+
+
+<%= link_to 'Edit', edit_aankoop_path(@aankoop) %> |
+<%= link_to 'Back', aankoops_path %>

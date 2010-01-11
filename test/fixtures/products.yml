@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  titel: MyString
+  prijs: MyString
+  jaar: 2010-01-07
+  artiest: MyString
+  genre: MyString
+  lengte: MyString
+  coverart: MyString
+  album: 
+  tracknr: 1
+  type: MyString
+
+two:
+  titel: MyString
+  prijs: MyString
+  jaar: 2010-01-07
+  artiest: MyString
+  genre: MyString
+  lengte: MyString
+  coverart: MyString
+  album: 
+  tracknr: 1
+  type: MyString

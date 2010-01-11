@@ -1,0 +1,31 @@
+<h1>New aankoop</h1>
+
+<% form_for(@aankoop) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :product %><br />
+    <%= f.text_field :product %>
+  </p>
+  <p>
+    <%= f.label :klant %><br />
+    <%= f.text_field :klant %>
+  </p>
+  <p>
+    <%= f.label :prijs %><br />
+    <%= f.text_field :prijs %>
+  </p>
+  <p>
+    <%= f.label :datum %><br />
+    <%= f.datetime_select :datum %>
+  </p>
+  <p>
+    <%= f.label :betaald %><br />
+    <%= f.check_box :betaald %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', aankoops_path %>

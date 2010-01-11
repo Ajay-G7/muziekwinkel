@@ -1,0 +1,13 @@
+<p>
+  <b>Password:</b>
+  <%=h @medewerker.password %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @medewerker.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_medewerker_path(@medewerker) %> |
+<%= link_to 'Back', medewerkers_path %>

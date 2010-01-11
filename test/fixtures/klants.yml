@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  voornaam: MyString
+  achternaam: MyString
+  geslacht: false
+  geboortedatum: 2010-01-07
+  email: MyString
+  creditcard: MyString
+  postcode: MyString
+  huisnummer: MyString
+
+two:
+  voornaam: MyString
+  achternaam: MyString
+  geslacht: false
+  geboortedatum: 2010-01-07
+  email: MyString
+  creditcard: MyString
+  postcode: MyString
+  huisnummer: MyString

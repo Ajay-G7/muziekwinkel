@@ -1,0 +1,44 @@
+<h1>Editing klant</h1>
+
+<% form_for(@klant) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :voornaam %><br />
+    <%= f.text_field :voornaam %>
+  </p>
+  <p>
+    <%= f.label :achternaam %><br />
+    <%= f.text_field :achternaam %>
+  </p>
+  <p>
+    <%= f.label :geslacht %><br />
+    <%= f.check_box :geslacht %>
+  </p>
+  <p>
+    <%= f.label :geboortedatum %><br />
+    <%= f.date_select :geboortedatum %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :creditcard %><br />
+    <%= f.text_field :creditcard %>
+  </p>
+  <p>
+    <%= f.label :postcode %><br />
+    <%= f.text_field :postcode %>
+  </p>
+  <p>
+    <%= f.label :huisnummer %><br />
+    <%= f.text_field :huisnummer %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @klant %> |
+<%= link_to 'Back', klants_path %>

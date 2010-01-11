@@ -1,0 +1,23 @@
+<p>
+  <b>Product:</b>
+  <%=h @commentaar.product %>
+</p>
+
+<p>
+  <b>Klant:</b>
+  <%=h @commentaar.klant %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%=h @commentaar.text %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%=h @commentaar.rating %>
+</p>
+
+
+<%= link_to 'Edit', edit_commentaar_path(@commentaar) %> |
+<%= link_to 'Back', commentaars_path %>

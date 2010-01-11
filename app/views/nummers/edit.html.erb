@@ -1,0 +1,46 @@
+<h1>Editing nummer</h1>
+
+<% form_for(@nummer) do |f| %>
+  <%= f.error_messages %>
+
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :titel %><br />
+    <%= f.text_field :titel %>
+  </p>
+  <p>
+    <%= f.label :prijs %><br />
+    <%= f.text_field :prijs %>
+  </p>
+  <p>
+    <%= f.label :jaar %><br />
+    <%= f.date_select :jaar %>
+  </p>
+  <p>
+    <%= f.label :artiest %><br />
+    <%= f.text_field :artiest %>
+  </p>
+  <p>
+    <%= f.label :genre %><br />
+    <%= f.text_field :genre %>
+  </p>
+  <p>
+    <%= f.label :lengte %><br />
+    <%= f.text_field :lengte %>
+  </p>
+  <p>
+    <%= f.label :album %><br />
+    <%= f.text_field :album %>
+  </p>
+  <p>
+    <%= f.label :tracknr %><br />
+    <%= f.text_field :tracknr %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @nummer %> |
+<%= link_to 'Back', nummers_path %>

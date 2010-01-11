@@ -1,0 +1,37 @@
+<p>
+  <b>Titel:</b>
+  <%=h @album.titel %>
+</p>
+
+<p>
+  <b>Prijs:</b>
+  <%=h @album.prijs %>
+</p>
+
+<p>
+  <b>Jaar:</b>
+  <%=h @album.jaar %>
+</p>
+
+<p>
+  <b>Artiest:</b>
+  <%=h @album.artiest %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%=h @album.genre %>
+</p>
+
+<p>
+  <b>Lengte:</b>
+  <%=h @album.lengte %>
+</p>
+
+<p>
+  <b>Coverart:</b>
+  <%=h @album.coverart %>
+</p>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>

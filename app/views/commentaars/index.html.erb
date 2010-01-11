@@ -1,0 +1,26 @@
+<h1>Listing commentaars</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Klant</th>
+    <th>Text</th>
+    <th>Rating</th>
+  </tr>
+
+<% for commentaar in @commentaars %>
+  <tr>
+    <td><%=h commentaar.product %></td>
+    <td><%=h commentaar.klant %></td>
+    <td><%=h commentaar.text %></td>
+    <td><%=h commentaar.rating %></td>
+    <td><%= link_to 'Show', commentaar %></td>
+    <td><%= link_to 'Edit', edit_commentaar_path(commentaar) %></td>
+    <td><%= link_to 'Destroy', commentaar, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New commentaar', new_commentaar_path %>

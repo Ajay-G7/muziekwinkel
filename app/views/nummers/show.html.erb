@@ -1,0 +1,42 @@
+<p>
+  <b>Titel:</b>
+  <%=h @nummer.titel %>
+</p>
+
+<p>
+  <b>Prijs:</b>
+  <%=h @nummer.prijs %>
+</p>
+
+<p>
+  <b>Jaar:</b>
+  <%=h @nummer.jaar %>
+</p>
+
+<p>
+  <b>Artiest:</b>
+  <%=h @nummer.artiest %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%=h @nummer.album %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%=h @nummer.genre %>
+</p>
+
+<p>
+  <b>Lengte:</b>
+  <%=h @nummer.lengte %>
+</p>
+
+<p>
+  <b>Tracknr:</b>
+  <%=h @nummer.tracknr %>
+</p>
+
+<%= link_to 'Edit', edit_nummer_path(@nummer) %> |
+<%= link_to 'Back', nummers_path %>

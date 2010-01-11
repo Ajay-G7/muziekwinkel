@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  product: 
+  klant: 
+  text: MyText
+  rating: 1
+
+two:
+  product: 
+  klant: 
+  text: MyText
+  rating: 1

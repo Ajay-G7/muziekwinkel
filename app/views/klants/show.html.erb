@@ -1,0 +1,43 @@
+<p>
+  <b>Voornaam:</b>
+  <%=h @klant.voornaam %>
+</p>
+
+<p>
+  <b>Achternaam:</b>
+  <%=h @klant.achternaam %>
+</p>
+
+<p>
+  <b>Geslacht:</b>
+  <%=h @klant.geslacht %>
+</p>
+
+<p>
+  <b>Geboortedatum:</b>
+  <%=h @klant.geboortedatum %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @klant.email %>
+</p>
+
+<p>
+  <b>Creditcard:</b>
+  <%=h @klant.creditcard %>
+</p>
+
+<p>
+  <b>Postcode:</b>
+  <%=h @klant.postcode %>
+</p>
+
+<p>
+  <b>Huisnummer:</b>
+  <%=h @klant.huisnummer %>
+</p>
+
+
+<%= link_to 'Edit', edit_klant_path(@klant) %> |
+<%= link_to 'Back', klants_path %>

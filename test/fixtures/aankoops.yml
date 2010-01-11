@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  product: 
+  klant: 
+  prijs: 1.5
+  datum: 2010-01-07 14:30:51
+  betaald: false
+
+two:
+  product: 
+  klant: 
+  prijs: 1.5
+  datum: 2010-01-07 14:30:51
+  betaald: false

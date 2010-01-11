@@ -1,0 +1,28 @@
+<h1>Listing aankoops</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Klant</th>
+    <th>Prijs</th>
+    <th>Datum</th>
+    <th>Betaald</th>
+  </tr>
+
+<% for aankoop in @aankoops %>
+  <tr>
+    <td><%=h aankoop.product %></td>
+    <td><%=h aankoop.klant %></td>
+    <td><%=h aankoop.prijs %></td>
+    <td><%=h aankoop.datum %></td>
+    <td><%=h aankoop.betaald %></td>
+    <td><%= link_to 'Show', aankoop %></td>
+    <td><%= link_to 'Edit', edit_aankoop_path(aankoop) %></td>
+    <td><%= link_to 'Destroy', aankoop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New aankoop', new_aankoop_path %>

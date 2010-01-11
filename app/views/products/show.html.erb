@@ -1,0 +1,48 @@
+<p>
+  <b>Titel:</b>
+  <%=h @product.titel %>
+</p>
+
+<p>
+  <b>Prijs:</b>
+  <%=h @product.prijs %>
+</p>
+
+<p>
+  <b>Jaar:</b>
+  <%=h @product.jaar %>
+</p>
+
+<p>
+  <b>Artiest:</b>
+  <%=h @product.artiest %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%=h @product.genre %>
+</p>
+
+<p>
+  <b>Lengte:</b>
+  <%=h @product.lengte %>
+</p>
+
+<p>
+  <b>Coverart:</b>
+  <%=h @product.coverart %>
+</p>
+
+<p>
+  <b>Tracknr:</b>
+  <%=h @product.tracknr %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @product.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
