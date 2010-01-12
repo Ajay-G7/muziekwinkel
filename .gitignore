@@ -3,5 +3,8 @@
 # gedit files
 *~
 # database files
+*.sqlite3
 *.sqlite
+# logs
+log
 
