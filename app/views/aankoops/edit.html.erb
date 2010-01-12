@@ -5,11 +5,11 @@
 
   <p>
     <%= f.label :product %><br />
-    <%= f.text_field :product %>
+    <%= f.collection_select :product_id, Product.find(:all), :id, :titel %>
   </p>
   <p>
     <%= f.label :klant %><br />
-    <%= f.text_field :klant %>
+    <%= f.collection_select :klant_id, Klant.find(:all), :id, :naam_omgekeerd %>
   </p>
   <p>
     <%= f.label :prijs %><br />
