@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>klant</th>
+    <th>rating</th>
+    <th>commentaar</th>
+  </tr>
+
+<% for commentaar in @album.commentaar.sort_by { |n| n.klant } %>
+  <tr>
+    <td><%= h commentaar.klant %></td>
+    <td><%= h commentaar.rating %></td>
+    <td><%= h commentaar.text %></td>
+  </tr>
+<% end %>
+
+</table>
