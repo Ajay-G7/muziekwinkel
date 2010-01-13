@@ -15,7 +15,7 @@
   </p>
   <p>
     <%= f.label :jaar %><br />
-    <%= f.date_select :jaar %>
+    <%= f.date_select :jaar, :start_year => 1900, :end_year => 2200, :include_blank => true %>
   </p>
   <p>
     <%= f.label :artiest %><br />
