@@ -20,6 +20,10 @@
     <%= f.text_field :artiest %>
   </p>
   <p>
+    <%= f.label :album %><br />
+    <%= f.collection_select :album_id, Album.find(:all), :id, :titel %>
+  </p>
+  <p>
     <%= f.label :genre %><br />
     <%= f.text_field :genre %>
   </p>

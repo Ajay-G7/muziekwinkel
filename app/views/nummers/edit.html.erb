@@ -22,16 +22,16 @@
     <%= f.text_field :artiest %>
   </p>
   <p>
+    <%= f.label :album %><br />
+    <%= f.collection_select :album_id, Album.find(:all), :id, :titel %>
+  </p>
+  <p>
     <%= f.label :genre %><br />
     <%= f.text_field :genre %>
   </p>
   <p>
     <%= f.label :lengte %><br />
     <%= f.text_field :lengte %>
-  </p>
-  <p>
-    <%= f.label :album %><br />
-    <%= f.text_field :album %>
   </p>
   <p>
     <%= f.label :tracknr %><br />
