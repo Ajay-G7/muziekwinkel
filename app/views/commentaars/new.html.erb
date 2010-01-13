@@ -10,6 +10,7 @@
   <p>
     <%= f.label :klant %><br />
     <%= f.collection_select :klant_id, Klant.find(:all), :id, :naam_omgekeerd %>
+  </p>
   <p>
     <%= f.label :text %><br />
     <%= f.text_area :text %>

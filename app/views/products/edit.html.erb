@@ -21,7 +21,7 @@
   </p>
   <p>
     <%= f.label :genre %><br />
-    <%= f.text_field :genre %>
+    <%= select( :genre, @genre, { "Blues" => "1", "Country" => "2", "Dance" => "3", "Diversen" => "4", "Folk" => "5", "Jazz" => "6", "Kind & Jeugd" => "7", "Klassiek" => "8", "Nederlands" => "9", "New Age" => "10", "Pop" => "11", "Rap & Hiphop" => "12", "R&B & Soul" => "13", "Reggae" => "14", "Religieus" => " 15", "Rock & Alternative" => "16", "Soundtracks & Musicals" => "17", "Verzamel-cd's & Boxsets" => "18", "Wereldmuziek" => "19" }) %>
   </p>
   <p>
     <%= f.label :lengte %><br />

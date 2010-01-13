@@ -25,6 +25,7 @@ class NummersController < ApplicationController
   # GET /nummers/new.xml
   def new
     @nummer = Nummer.new
+    @albums = Album.find(:all)
 
     respond_to do |format|
       format.html # new.html.erb

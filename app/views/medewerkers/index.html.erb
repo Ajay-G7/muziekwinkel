@@ -2,14 +2,14 @@
 
 <table>
   <tr>
-    <th>Password</th>
     <th>Email</th>
+    <th>Password</th>
   </tr>
 
 <% for medewerker in @medewerkers %>
   <tr>
-    <td><%=h medewerker.password %></td>
     <td><%=h medewerker.email %></td>
+    <td><%=h medewerker.password %></td>
     <td><%= link_to 'Show', medewerker %></td>
     <td><%= link_to 'Edit', edit_medewerker_path(medewerker) %></td>
     <td><%= link_to 'Destroy', medewerker, :confirm => 'Are you sure?', :method => :delete %></td>
