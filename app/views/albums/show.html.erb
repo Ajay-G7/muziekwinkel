@@ -30,8 +30,11 @@
 
 <p>
   <b>Coverart:</b>
-  <%=h @album.coverart %>
+  <img src="<%=h @album.coverart %>" height="200px">
 </p>
+
+<h2>Nummers:</h2>
+<%= render :partial => 'nummers/index' %>
 
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
