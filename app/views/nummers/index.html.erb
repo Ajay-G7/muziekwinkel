@@ -18,7 +18,7 @@
     <td><%=h nummer.prijs %></td>
     <td><%=h nummer.jaar %></td>
     <td><%=h nummer.artiest %></td>
-    <td><%=h nummer.album %></td>
+    <td><%=h nummer.album.titel unless nummer.album.nil? %></td>
     <td><%=h nummer.genre %></td>
     <td><%=h nummer.lengte %></td>
     <td><%=h nummer.tracknr %></td>
