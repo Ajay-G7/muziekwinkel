@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>#</th>
+    <th>Titel</th>
+    <th>Artiest</th>
+  </tr>
+
+<% for nummer in @album.nummers.sort_by { |n| n.tracknr } %>
+  <tr>
+    <td><%= h nummer.tracknr %></td>
+    <td><%= h nummer.titel %></td>
+    <td><%= h nummer.artiest %></td>
+  </tr>
+<% end %>
+
+</table>
