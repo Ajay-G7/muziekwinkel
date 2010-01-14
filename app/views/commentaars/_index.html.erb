@@ -1,18 +1,14 @@
+<% for commentaar in @album.commentaar.sort_by { |n| n.created_at}  %>
 <table>
+
   <tr>
-    <th>klant</th>
-    <th>rating</th>
-    <th>commentaar</th>
+    <td><strong><%= h commentaar.klant.naam_omgekeerd %></strong></td>
+    <td><%= h commentaar.created_at.to_s(:long) %></td>
   </tr>
-
-<% for commentaar in @album.commentaar.sort_by { |n| n.klant } %>
-  <tr>
-    <td><%= h commentaar.klant %></td>
-    <td><%= h commentaar.rating %></td>
-    <td><%= h commentaar.text %></td>
+    <tr>
+    <td colspan="2"><strong>waardering: <%= h commentaar.rating %></strong><br />      
+      <%= h commentaar.text %></td>
   </tr>
-<% end %>
-
-
 
 </table>
+<% end %>
