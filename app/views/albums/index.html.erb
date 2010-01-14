@@ -3,7 +3,7 @@
 <% for album in @albums %>
 <table width="559px">
  <tr>
-    <td rowspan="6"><%= image_tag((album.coverart or 'default-album.jpg'), :width => '100px', :height => '100px') %></td>
+    <td width="100px" rowspan="6"><%= image_tag((album.coverart or 'default-album.jpg'), :width => '100px', :height => '100px') %></td>
     <td width="50px">artiest:</td>
     <td><%=h album.artiest %>&nbsp;</td>
   </tr>
