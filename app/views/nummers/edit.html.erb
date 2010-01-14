@@ -3,8 +3,6 @@
 <% form_for(@nummer) do |f| %>
   <%= f.error_messages %>
 
-  <%= f.error_messages %>
-
   <p>
     <%= f.label :titel %><br />
     <%= f.text_field :titel %>
@@ -27,7 +25,8 @@
   </p>
   <p>
     <%= f.label :genre %><br />
-    <%= select( :genre, @genre, { "Blues" => "1", "Country" => "2", "Dance" => "3", "Diversen" => "4", "Folk" => "5", "Jazz" => "6", "Kind & Jeugd" => "7", "Klassiek" => "8", "Nederlands" => "9", "New Age" => "10", "Pop" => "11", "Rap & Hiphop" => "12", "R&B & Soul" => "13", "Reggae" => "14", "Religieus" => "15", "Rock & Alternative" => "16", "Soundtracks & Musicals" => "17", "Verzamel-cd's & Boxsets" => "18", "Wereldmuziek" => "19" }) %>  </p>
+    <%= select(:nummer, :genre, ["Blues", "Country", "Dance", "Diversen", "Folk", "Jazz", "Kind & Jeugd", "Klassiek", "Nederlands", "New Age", "Pop", "Rap & Hiphop", "R&B & Soul", "Reggae", "Religieus", "Rock & Alternative", "Soundtracks & Musicals", "Verzamel-cd's & Boxsets", "Wereldmuziek"]) %>
+  </p>
   <p>
     <%= f.label :lengte %><br />
     <%= f.text_field :lengte %>
