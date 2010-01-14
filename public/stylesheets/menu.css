@@ -9,75 +9,75 @@ way to fit your requirements.
 =================================================================== */
 
 /* default styling */
-.nav, .nav ul {list-style-type:none; margin:0; padding:0px;     }
-.nav ul {border-top:1px;}
-.nav a {text-decoration:none;}
-.nav {font-family: arial, sans-serif; font-size:12px; width:auto; margin:0 auto; text-align:left; }
+.nav, .nav ul           {list-style-type:none; margin:0; padding:0px;     }
+.nav ul                 {border-top:1px;}
+.nav a                  {text-decoration:none;}
+.nav                    {font-family: arial, sans-serif; font-size:12px; width:auto; margin:0 auto; text-align:left; }
 
 /* style the links */
 /* needs a background for IE6 - can be a color or a transparent gif */
-.nav a {background:url(ulmulti5/trans.gif); filter: alpha(opacity=90); opacity:0.9;} 
+.nav a                  {background:url(ulmulti5/trans.gif); filter: alpha(opacity=90); opacity:0.9;} 
 
 /* style the <b> element so that is does not affect the size of the link */
-.nav a b {color:#fff; font-weight:normal; display:block; padding:5px 10px; margin-right:1px;}
-.nav a:hover b {color:#000; cursor:pointer; border-left:0px solid #eee;}
-.nav .fly .main b {background: transparent url(ulmulti5/arrow.gif) no-repeat right 9px;}
-.nav .down b {background: transparent url(ulmulti5/arrow2.gif) no-repeat right 11px;}
+.nav a b                {color:#fff; font-weight:normal; display:block; padding:5px 10px; margin-right:1px;}
+.nav a:hover b          {color:#000; cursor:pointer; border-left:0px solid #eee;}
+.nav .fly .main b       {background: transparent url(ulmulti5/arrow.gif) no-repeat right 9px;}
+.nav .down b            {background: transparent url(ulmulti5/arrow2.gif) no-repeat right 11px;}
 /* for the offset left dropdown and flyout */
-.nav .nav4 ul b {text-align:right;}
-.nav .nav4 ul .main b {background: transparent url(ulmulti5/arrow3.gif) no-repeat left 9px; text-align:right;}
+.nav .nav4 ul b         {text-align:right;}
+.nav .nav4 ul .main b   {background: transparent url(ulmulti5/arrow3.gif) no-repeat left 9px; text-align:right;}
 .nav .nav4 ul a:hover b {border-left:0; border-right:0px solid #eee;}
 
 /* HEIGHT */
-.nav ul ul {top:-25px;} /* position the top of the flyout sub menus */
-.nav ul ul.two {top:-40px;} /* position the top of the flyout sub menus */
+.nav ul ul              {top:-25px;} /* position the top of the flyout sub menus */
+.nav ul ul.two          {top:-40px;} /* position the top of the flyout sub menus */
 
 /* WIDTH change this WITH CARE to suit your requirements */
 
 /* FOR NAV1 */
-.nav1 {width:80px;}
-.nav1 a {width:80px;}
-.nav1 a b {background-color:#764;}
+.nav1                   {width:80px;}
+.nav1 a                 {width:80px;}
+.nav1 a b               {background-color:#764;}
 
 /* FOR NAV2 */
 .nav2,
-.nav2 a {width:100px; }
+.nav2 a                 {width:100px; }
 .nav .nav2 a b,
-.nav .nav2 .fly a b {background-color:#887; }
-.nav2 ul li {max-width:100px; }
-.nav2 ul a {width:130px;}
-.nav2 ul ul {left:130px;}
-.nav2 a {margin-right:-99px;}
-.nav2 ul a {margin-right:-129px;}
+.nav .nav2 .fly a b     {background-color:#887; }
+.nav2 ul li             {max-width:100px; }
+.nav2 ul a              {width:130px;}
+.nav2 ul ul             {left:130px;}
+.nav2 a                 {margin-right:-99px;}
+.nav2 ul a              {margin-right:-129px;}
 
 /* FOR NAV3 */
 .nav3,
-.nav3 a {width:100px;}
+.nav3 a                 {width:100px;}
 .nav .nav3 a b,
-.nav .nav3 .fly a b {background-color:#775;}
-.nav3 ul li {max-width:100px;}
-.nav3 ul a {width:120px;}
-.nav3 ul ul {left:120px;}
-.nav3 a {margin-right:-99px;}
-.nav3 ul a {margin-right:-119px;}
+.nav .nav3 .fly a b     {background-color:#775;}
+.nav3 ul li             {max-width:100px;}
+.nav3 ul a              {width:120px;}
+.nav3 ul ul             {left:120px;}
+.nav3 a                 {margin-right:-99px;}
+.nav3 ul a              {margin-right:-119px;}
 
 /* FOR NAV4 */
 .nav4,
-.nav4 a {width:90px;}
+.nav4 a                 {width:90px;}
 .nav .nav4 a b,
-.nav .nav4 .fly a b {background-color:#675;}
-.nav4 ul li {max-width:90px;}
-.nav4 ul a {width:110px;}
-.nav4 ul {left:-20px;} /* position the dropdown left (1px ruimte)*/
-.nav4 ul ul {left:auto; right:110px;}  /* position the flyouts left */
-.nav4 a {margin-right:-79px;}
-.nav4 ul a {margin-right:-109px;}
+.nav .nav4 .fly a b     {background-color:#675;}
+.nav4 ul li             {max-width:90px;}
+.nav4 ul a              {width:110px;}
+.nav4 ul                {left:-20px;} /* position the dropdown left (1px ruimte) */
+.nav4 ul ul             {left:auto; right:110px;}  /* position the flyouts left */
+.nav4 a                 {margin-right:-79px;}
+.nav4 ul a              {margin-right:-109px;}
 
 
 /* FOR NAV5 */
-.nav5 {width:100px;}
-.nav5 a {width:100px;}
-.nav5 a b {background-color:#a54; margin-right:0;}
+.nav5                   {width:100px;}
+.nav5 a                 {width:100px;}
+.nav5 a b               {background-color:#a54; margin-right:0;}
 
 /* ---------------------------------------------------------------------------- */
 

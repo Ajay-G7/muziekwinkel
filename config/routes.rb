@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :commentaars
   map.resources :aankoops
   map.resources :klants
+  map.resources :disclaimer, :only => "index"
 
   map.resources :search, :only => "index"
 
