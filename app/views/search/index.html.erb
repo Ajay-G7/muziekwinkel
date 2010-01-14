@@ -1,0 +1,16 @@
+<h2>Zoek Opdracht:</h2>
+
+<table>
+  <tr>
+    <th>Titel</th>
+    <th>Artiest</th>
+    <th>Prijs</th>
+  </tr>
+<% for product in @products %>
+  <tr>
+    <td><%= product.titel %></td>
+    <td><%= product.artiest %></td>
+    <td><%= product.prijs %></td>
+  </tr>
+<% end %>
+</table>
