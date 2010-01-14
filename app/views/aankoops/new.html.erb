@@ -12,10 +12,6 @@
     <%= f.collection_select :klant_id, Klant.find(:all), :id, :naam_omgekeerd %>
   </p>
   <p>
-    <%= f.label :prijs %><br />
-    <%= f.text_field :prijs %>
-  </p>
-  <p>
     <%= f.label :datum %><br />
     <%= f.datetime_select :datum, :start_year => 2010, :end_year => 2200 %>
   </p>

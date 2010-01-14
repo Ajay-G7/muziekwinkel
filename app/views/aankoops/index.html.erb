@@ -11,8 +11,8 @@
 
 <% for aankoop in @aankoops %>
   <tr>
-    <td><%=h aankoop.product %></td>
-    <td><%=h aankoop.klant %></td>
+    <td><%=h aankoop.product.titel %></td>
+    <td><%=h aankoop.klant.naam_omgekeerd %></td>
     <td><%=h aankoop.prijs %></td>
     <td><%=h aankoop.datum %></td>
     <td><%=h aankoop.betaald %></td>

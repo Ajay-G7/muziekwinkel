@@ -43,6 +43,9 @@ class AankoopsController < ApplicationController
   # POST /aankoops.xml
   def create
     @aankoop = Aankoop.new(params[:aankoop])
+    if @aankoop.prijs.nil?
+      @aankoop.prijs = @aankoop.product.prijs
+    end
 
     respond_to do |format|
       if @aankoop.save

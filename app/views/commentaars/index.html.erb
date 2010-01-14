@@ -10,8 +10,8 @@
 
 <% for commentaar in @commentaars %>
   <tr>
-    <td><%=h commentaar.product %></td>
-    <td><%=h commentaar.klant %></td>
+    <td><%=h commentaar.product.titel %></td>
+    <td><%=h commentaar.klant.naam_omgekeerd %></td>
     <td><%=h commentaar.text %></td>
     <td><%=h commentaar.rating %></td>
     <td><%= link_to 'Show', commentaar %></td>
