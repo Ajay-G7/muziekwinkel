@@ -5,11 +5,11 @@
 
   <p>
     <%= f.label :product %><br />
-    <%= f.collection_select :product_id, Product.find(:all), :id, :titel %>
+    <%= f.collection_select :product_id, Product.find(:all).sort_by {|item| item.titel}, :id, :titel %>
   </p>
   <p>
     <%= f.label :klant %><br />
-    <%= f.collection_select :klant_id, Klant.find(:all), :id, :naam_omgekeerd %>
+    <%= f.collection_select :klant_id, Klant.find(:all).sort_by {|item| item.naam_omgekeerd}, :id, :naam_omgekeerd %>
   </p>
   <p>
     <%= f.label :text %><br />
