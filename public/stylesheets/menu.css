@@ -9,7 +9,7 @@ way to fit your requirements.
 =================================================================== */
 
 /* default styling */
-.nav, .nav ul {list-style-type:none; margin:0; padding:0px; 	}
+.nav, .nav ul {list-style-type:none; margin:0; padding:0px;     }
 .nav ul {border-top:1px;}
 .nav a {text-decoration:none;}
 .nav {font-family: arial, sans-serif; font-size:12px; width:auto; margin:0 auto; text-align:left; }
@@ -79,7 +79,7 @@ way to fit your requirements.
 .nav5 a {width:100px;}
 .nav5 a b {background-color:#a54; margin-right:0;}
 
-/* ----------------------------------------------------------------------------	*/
+/* ---------------------------------------------------------------------------- */
 
 /* DO NOT CHANGE ANYTHING BELOW */
 .nav li {float:left;} /* fixes several IE related bugs, and allows for clearing */
@@ -121,4 +121,4 @@ way to fit your requirements.
 .nav ul:hover,
 .nav ul ul:hover {clear:left;} /* to stop intermittent sub link :hover problems */
 
-/* ----------------------------------------------------------------------------	*/
+/* ---------------------------------------------------------------------------- */
