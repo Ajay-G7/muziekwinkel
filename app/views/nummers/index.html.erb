@@ -2,26 +2,22 @@
 
 <table>
   <tr>
-    <th>Titel</th>
-    <th>Prijs</th>
-    <th>Jaar</th>
     <th>Artiest</th>
+    <th>Titel</th>
     <th>Album</th>
     <th>Genre</th>
     <th>Lengte</th>
-    <th>Tracknr</th>
+    <th>Prijs</th>
   </tr>
 
 <% for nummer in @nummers %>
   <tr>
-    <td><%=h nummer.titel %></td>
-    <td><%=h nummer.prijs %></td>
-    <td><%=h nummer.jaar %></td>
     <td><%=h nummer.artiest %></td>
+    <td><%=h nummer.titel %></td>
     <td><%=h nummer.album.titel unless nummer.album.nil? %></td>
     <td><%=h nummer.genre %></td>
     <td><%=h nummer.lengte %></td>
-    <td><%=h nummer.tracknr %></td>
+    <td><%=h nummer.prijs %></td>
     <td><%= link_to 'Show', nummer %></td>
     <td><%= link_to 'Edit', edit_nummer_path(nummer) %></td>
     <td><%= link_to 'Destroy', nummer, :confirm => 'Are you sure?', :method => :delete %></td>
