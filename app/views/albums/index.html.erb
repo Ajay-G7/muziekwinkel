@@ -1,39 +1,39 @@
 <h1>Listing albums</h1>
 
+<% for album in @albums %>
 <table width="559px">
-	<% for album in @albums %>
  <tr>
     <td rowspan="6"><%= image_tag((album.coverart or 'default-album.jpg'), :width => '100px', :height => '100px') %></td>
-    <td>artiest:</td>
+    <td width="50px">artiest:</td>
     <td><%=h album.artiest %>&nbsp;</td>
   </tr>
   <tr>
-    <td>album:</td>
+    <td>Album:</td>
     <td><%=h album.titel %>&nbsp;</td>
   </tr>
     <tr>
-    <td>lengte:</td>
+    <td>Lengte:</td>
     <td><%=h album.lengte %>&nbsp;</td>
   </tr>
     <tr>
-    <td>jaar:</td>
+    <td>Jaar:</td>
     <td><%=h album.jaar %>&nbsp;</td>
   </tr>
   <tr>
-    <td>genre:</td>
+    <td>Genre:</td>
     <td><%=h album.genre %>&nbsp;</td>
   </tr>
   <tr>
-    <td>prijs:</td>
+    <td>Prijs:</td>
     <td><%=h album.prijs %>&nbsp;</td>
   </tr>
-	<td></td>
-    <td>acties:</td>
+    <td><br /></td>
+    <td>Acties:</td>
     <td><%= link_to 'Show', album %> <%= link_to 'Edit', edit_album_path(album) %> <%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+    <td><br /><br /></td>
+</tr>
 </table>
-
 <br />
+<% end %>
 
 <%= link_to 'New album', new_album_path %>

@@ -1,0 +1,234 @@
+    body {
+    font-family:        Verdana, Geneva, sans-serif;
+    font-size:          12px;
+    border-width:       0px;
+    padding:            0px;
+    margin:             0px;
+    background-color:   #333;
+    }
+/* 960 px breed alles staat hierin (behalve misschien de muziekplayer) */
+    .container {
+    background-color:   #ffffff;
+    padding:            0px;
+    margin-left:        auto;
+    margin-right:       auto;
+    width:              960px;
+    min-height:         200px;
+    border:             1px solid gray;
+    border-bottom:      0px;
+    height:             auto;
+    position:           relative;
+    }
+/* logo komt hierin */
+    .header {
+    background-color:   #999;
+    padding:            0px;
+    margin-left:        auto;
+    margin-right:       auto;
+    width:              960px;
+    height:             100px;
+    border:             0px solid gray;
+    }
+/* menu container voor alle dingen in de menu balk */
+    .menu {
+    background-color:   #111111;
+    padding:            0px;
+    padding-top:        1px;
+    padding-left:       1px;
+    float:              none;
+    margin-left:        0px;
+    width:              959px;
+    height:             26px;
+    border:             0px solid gray;
+    position:           relative;
+    }
+/* hoofd menu items */
+    .leftmenu {
+    background-color:   #111111;
+    padding:            0px;
+    padding-top:        0px;
+    padding-left:       0px;
+    float:              left;
+    margin-left:		0px;
+    width:			auto;
+    height:			25px;
+    border:			0px solid gray;
+    }
+/* login gedeelte container */
+				.login {
+	background-color:	#111111;
+	padding:			0px;
+	padding-top:		5px;
+	padding-left:		2px;
+	float:				left;
+	margin-left:		1px;
+	width:				auto;
+	height:				20px;
+	border:				0px solid gray;
+	font: 				10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color:				 #ffffff;
+				}
+/* login form input slyling */
+				.input {    
+					margin-top: 0px;
+					width: 60px;
+					height: 14px;
+					font: 9px Verdana, Geneva, Arial, Helvetica, sans-serif;    
+					background-color: #ccc;
+					color: #000;    
+					border: 0px solid #284279;
+				}
+/* login form input slyling */
+
+				
+.button input
+				{
+	color: #000;
+	border: 2px outset #999;
+	margin-top: 0px;
+	width: 36px;
+	height: 16px;
+	font: 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color: #999;
+	padding-top: 0px;
+	padding-right: 1px;
+	padding-bottom: 0px;
+	padding-left: 1px;
+				}
+				
+				/* rechter inhoud: zoek */
+.right_body form label {
+	width: 50px;
+	display: block;
+	float:left;
+}
+.zoekveld_rechts   {
+	width: 160px;
+	margin-top: 0px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+	color: #000;
+	border: 1px solid #000;
+	height: 16px;
+	float: left;
+}
+				.zoekveld_submit {
+	margin-top: 0px;
+	width: 90px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #999;
+	color: #000;
+	border: 2px outset #999;
+	height: 20px;
+	margin-left: 10px;
+				}
+	
+.button 
+				{
+	color: #000;
+	border: 1px none #d7b9c9;
+	float: right;
+	clear: none;
+	position: relative;
+	left: 3px;
+				}
+				
+/* rechter zoek menuknop */
+				.searchmenu {
+					background-color:	#111111;
+					padding:		0px;
+					padding-top:		0px;
+					padding-right:		0px;
+					float:			right;
+					margin-right:		0px;
+					width:			auto;
+					height:			25px;
+					border:			0px solid gray;
+				}
+				
+		/* inhoud container */			
+	.inhoud {
+	background-color:	#fff;
+	padding:		0px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:			960px;
+	min-height:		500px;
+	border:			0px solid gray;
+	height: auto;
+	position: relative;
+	left: 0px;
+	top: 0px;
+				}
+			/* linker inhoud */
+	.inhoud_text_links {
+	padding: 5px;
+	height: auto;
+	width: 569px;
+	position: relative;
+	left: 1px;
+	top: 1px;
+	float: left;
+	background-color: #fff;
+	border: 0px solid #fff;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+
+}
+
+#footer /* footer met copyrights en clear both om de inhoud container met de floated divs mee te laten vergroten*/
+{
+clear: both;
+margin: 0;
+padding: 0em;
+height:1px;
+}
+
+/* mp3player */
+				.mp3player {
+	position:	fixed;
+	bottom:		0px;
+	background-color:	#999;
+	padding:		0px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:			960px;
+	height:		80px;
+	border:			0px solid gray;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+				}
+				
+	/* achtergrond onder (als de inhoud div niet op volledige hoogte komt)*/
+	.bgwhite {
+	background-color:	#ffffff;
+	padding:		0px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:			960px;
+	min-height:		200px;
+	border:			1px solid gray;
+	border-bottom:			1px;
+	margin-left:	-1px;
+	position:	fixed;
+	bottom:		0px;
+
+	height:		100%;
+	z-index: 	-30;
+	}
+	
+				/*ruimte voor mp3player onder aan bewegende site*/
+.bottommp3spacer {
+	clear: both;
+	margin: 0;
+	height:80px;
+
+}
