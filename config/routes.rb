@@ -1,18 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
 
   map.resources :medewerkers
-
   map.resources :albums
-
   map.resources :nummers
-
   map.resources :products
-
   map.resources :commentaars
-
   map.resources :aankoops
-
   map.resources :klants
+  map.resources :disclaimer, :only => "index"
 
   map.root :controller => "home"
   # The priority is based upon order of creation: first created -> highest priority.
