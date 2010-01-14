@@ -4,22 +4,21 @@
     <base href="http://localhost:3000" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Muziekwinkel</title>
+<%= stylesheet_link_tag :all %>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function()
 {
-  //hide the all of the element with class msg_body
-  $(".right_body").hide();
-  //toggle the componenet with class msg_body
-  $(".right_head").click(function()
-  {
-    $(this).next(".right_body").slideToggle(400);
-  });
-});
+   //hide the all of the element with class msg_body
+   $(".right_body").hide();
+   //toggle the componenet with class msg_body
+   $(".right_head").click(function()
+   {
+        $(this).next(".right_body").slideToggle(400);
+   });
+ });
 </script>
-
-<%= stylesheet_link_tag :all %>
 
 </head>
 <body>
@@ -140,7 +139,6 @@ $(document).ready(function()
 </div>
 
 <div class="inhoud"> <!-- alles onder het menu-->
-
   <div class="inhoud_text_links"> <!-- hier komen de views-->
   <%= yield -%>
 </div>
