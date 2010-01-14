@@ -1,6 +1,8 @@
 class AankoopsController < ApplicationController
   # GET /aankoops
   # GET /aankoops.xml
+    layout 'standard'
+  
   def index
     @aankoops = Aankoop.find(:all)
 

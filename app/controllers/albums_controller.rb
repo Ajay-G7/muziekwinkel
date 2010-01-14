@@ -1,6 +1,8 @@
 class AlbumsController < ApplicationController
   # GET /albums
   # GET /albums.xml
+    layout 'standard'
+  
   def index
     @albums = Album.find(:all)
 

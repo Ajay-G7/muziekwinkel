@@ -1,0 +1,762 @@
+<!DOCTYPE html PUBLIC "XHTML 1.0 Strict" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<base href="http://localhost:3000" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Muziekwinkel</title>
+
+<style type="text/css">
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/ul-multi-five.html
+Copyright (c) 2005-2009 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+/* default styling */
+.nav, .nav ul {list-style-type:none; margin:0; padding:0px; 	}
+.nav ul {border-top:1px;}
+.nav a {text-decoration:none;}
+.nav {font-family: arial, sans-serif; font-size:12px; width:auto; margin:0 auto; text-align:left; }
+
+/* style the links */
+/* needs a background for IE6 - can be a color or a transparent gif */
+.nav a {background:url(ulmulti5/trans.gif); filter: alpha(opacity=90); opacity:0.9;} 
+
+/* style the <b> element so that is does not affect the size of the link */
+.nav a b {color:#fff; font-weight:normal; display:block; padding:5px 10px; margin-right:1px;}
+.nav a:hover b {color:#000; cursor:pointer; border-left:0px solid #eee;}
+.nav .fly .main b {background: transparent url(ulmulti5/arrow.gif) no-repeat right 9px;}
+.nav .down b {background: transparent url(ulmulti5/arrow2.gif) no-repeat right 11px;}
+/* for the offset left dropdown and flyout */
+.nav .nav4 ul b {text-align:right;}
+.nav .nav4 ul .main b {background: transparent url(ulmulti5/arrow3.gif) no-repeat left 9px; text-align:right;}
+.nav .nav4 ul a:hover b {border-left:0; border-right:0px solid #eee;}
+
+/* HEIGHT */
+.nav ul ul {top:-25px;} /* position the top of the flyout sub menus */
+.nav ul ul.two {top:-40px;} /* position the top of the flyout sub menus */
+
+/* WIDTH change this WITH CARE to suit your requirements */
+
+/* FOR NAV1 */
+.nav1 {width:80px;}
+.nav1 a {width:80px;}
+.nav1 a b {background-color:#764;}
+
+/* FOR NAV2 */
+.nav2,
+.nav2 a {width:100px; }
+.nav .nav2 a b,
+.nav .nav2 .fly a b {background-color:#887; }
+.nav2 ul li {max-width:100px; }
+.nav2 ul a {width:130px;}
+.nav2 ul ul {left:130px;}
+.nav2 a {margin-right:-99px;}
+.nav2 ul a {margin-right:-129px;}
+
+/* FOR NAV3 */
+.nav3,
+.nav3 a {width:100px;}
+.nav .nav3 a b,
+.nav .nav3 .fly a b {background-color:#775;}
+.nav3 ul li {max-width:100px;}
+.nav3 ul a {width:120px;}
+.nav3 ul ul {left:120px;}
+.nav3 a {margin-right:-99px;}
+.nav3 ul a {margin-right:-119px;}
+
+/* FOR NAV4 */
+.nav4,
+.nav4 a {width:90px;}
+.nav .nav4 a b,
+.nav .nav4 .fly a b {background-color:#675;}
+.nav4 ul li {max-width:90px;}
+.nav4 ul a {width:110px;}
+.nav4 ul {left:-20px;} /* position the dropdown left (1px ruimte)*/
+.nav4 ul ul {left:auto; right:110px;}  /* position the flyouts left */
+.nav4 a {margin-right:-79px;}
+.nav4 ul a {margin-right:-109px;}
+
+
+/* FOR NAV5 */
+.nav5 {width:100px;}
+.nav5 a {width:100px;}
+.nav5 a b {background-color:#a54; margin-right:0;}
+
+/* ----------------------------------------------------------------------------	*/
+
+/* DO NOT CHANGE ANYTHING BELOW */
+.nav li {float:left;} /* fixes several IE related bugs, and allows for clearing */
+.nav ul {float:left; position:relative; z-index:20;} /* necessary for float drop and to stack the <ul>s */
+.nav ul li {clear:left; } /* must clear the floated list item inside sublist */
+.nav a {position:relative; display:block;} /* needs to have a position, to be above the rest */
+.nav a.main {float:left; /* necessary for float drop */
+    margin-top:10000px;} /* bring the top level links back into view */
+.nav .drop,
+.nav .fly {margin-top:-10000px;} /* hide the sub links and their containers, opera has low upper limits */
+.nav ul {margin-bottom:-5000px;} /* avoid any interaction between the subs, can be any large size */
+
+/* The bit that does ALL the work to bring the sub menus into view */
+.nav a:hover,
+.nav a:focus,
+.nav a:active {margin-right:0; z-index:10; outline:0;}
+
+.nav a:hover b,
+.nav a:focus b,
+.nav a:active b {color:#000; cursor:pointer; border-left:0px solid #eee;}
+
+.nav .nav4 ul a:hover b,
+.nav .nav4 ul a:focus b,
+.nav .nav4 ul a:active b {border-left:0; border-right:0px solid #eee;}
+
+.nav2 ul a:hover,
+.nav2 ul a:focus,
+.nav2 ul a:active {margin-right:-30px; z-index:10; outline:0;}
+
+.nav3 ul a:hover,
+.nav3 ul a:focus,
+.nav3 ul a:active {margin-right:-20px; z-index:10; outline:0;}
+
+.nav4 ul a:hover,
+.nav4 ul a:focus,
+.nav4 ul a:active {margin-right:-30px; z-index:10; outline:0;}
+
+/* OPERA fix */
+.nav ul:hover,
+.nav ul ul:hover {clear:left;} /* to stop intermittent sub link :hover problems */
+
+/* ----------------------------------------------------------------------------	*/
+</style>
+		
+		<style type="text/css">
+				body {
+	font-family: 	Verdana, Geneva, sans-serif;
+	font-size:		12px;
+	border-width:	0px;
+	padding:		0px;
+	margin:			0px;
+	background-color:	#333;
+				}
+/* 960 px breed alles staat hierin (behalve misschien de muziekplayer) */
+				.container {
+	background-color:	#ffffff;
+	padding:		0px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:			960px;
+	min-height:		200px;
+	border:			1px solid gray;
+	border-bottom:			0px;
+	height: auto;
+	position: relative;
+				}
+/* logo komt hierin */
+				.header {
+	background-color:	#999;
+	padding:		0px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:			960px;
+	height:		100px;
+	border:			0px solid gray;
+				}
+/* menu container voor alle dingen in de menu balk */
+				.menu {
+	background-color:	#111111;
+	padding:		0px;
+	padding-top:		1px;
+	padding-left:		1px;
+	float:			none;
+	margin-left:		0px;
+	width:			959px;
+	height:			26px;
+	border:			0px solid gray;
+	position: relative;
+				}
+/* hoofd menu items */
+				.leftmenu {
+					background-color:	#111111;
+					padding:		0px;
+					padding-top:		0px;
+					padding-left:		0px;
+					float:			left;
+					margin-left:		0px;
+					width:			auto;
+					height:			25px;
+					border:			0px solid gray;
+				}
+/* login gedeelte container */
+				.login {
+	background-color:	#111111;
+	padding:			0px;
+	padding-top:		5px;
+	padding-left:		2px;
+	float:				left;
+	margin-left:		1px;
+	width:				auto;
+	height:				20px;
+	border:				0px solid gray;
+	font: 				10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color:				 #ffffff;
+				}
+/* login form input slyling */
+				.input {    
+					margin-top: 0px;
+					width: 60px;
+					height: 14px;
+					font: 9px Verdana, Geneva, Arial, Helvetica, sans-serif;    
+					background-color: #ccc;
+					color: #000;    
+					border: 0px solid #284279;
+				}
+/* login form input slyling */
+
+				
+.button input
+				{
+	color: #000;
+	border: 2px outset #999;
+	margin-top: 0px;
+	width: 36px;
+	height: 16px;
+	font: 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color: #999;
+	padding-top: 0px;
+	padding-right: 1px;
+	padding-bottom: 0px;
+	padding-left: 1px;
+				}
+				
+				/* rechter inhoud: zoek */
+.right_body form label {
+	width: 50px;
+	display: block;
+	float:left;
+}
+.zoekveld_rechts   {
+	width: 160px;
+	margin-top: 0px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+	color: #000;
+	border: 1px solid #000;
+	height: 16px;
+	float: left;
+}
+				.zoekveld_submit {
+	margin-top: 0px;
+	width: 90px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #999;
+	color: #000;
+	border: 2px outset #999;
+	height: 20px;
+	margin-left: 10px;
+				}
+	
+.button 
+				{
+	color: #000;
+	border: 1px none #d7b9c9;
+	float: right;
+	clear: none;
+	position: relative;
+	left: 3px;
+				}
+				
+/* rechter zoek menuknop */
+				.searchmenu {
+					background-color:	#111111;
+					padding:		0px;
+					padding-top:		0px;
+					padding-right:		0px;
+					float:			right;
+					margin-right:		0px;
+					width:			auto;
+					height:			25px;
+					border:			0px solid gray;
+				}
+				
+		/* inhoud container */			
+	.inhoud {
+	background-color:	#fff;
+	padding:		0px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:			960px;
+	min-height:		500px;
+	border:			0px solid gray;
+	height: auto;
+	position: relative;
+	left: 0px;
+	top: 0px;
+				}
+			/* linker inhoud */
+	.inhoud_text_links {
+	padding: 5px;
+	height: auto;
+	width: 569px;
+	position: relative;
+	left: 1px;
+	top: 1px;
+	float: left;
+	background-color: #fff;
+	border: 0px solid #fff;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+
+}
+
+#footer /* footer met copyrights en clear both om de inhoud container met de floated divs mee te laten vergroten*/
+{
+clear: both;
+margin: 0;
+padding: 0em;
+height:1px;
+}
+
+/* mp3player */
+				.mp3player {
+	position:	fixed;
+	bottom:		0px;
+	background-color:	#999;
+	padding:		0px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:			960px;
+	height:		80px;
+	border:			0px solid gray;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+				}
+				
+	/* achtergrond onder (als de inhoud div niet op volledige hoogte komt)*/
+	.bgwhite {
+	background-color:	#ffffff;
+	padding:		0px;
+	margin-left:		auto;
+	margin-right:		auto;
+	width:			960px;
+	min-height:		200px;
+	border:			1px solid gray;
+	border-bottom:			1px;
+	margin-left:	-1px;
+	position:	fixed;
+	bottom:		0px;
+
+	height:		100%;
+	z-index: 	-30;
+	}
+	
+				/*ruimte voor mp3player onder aan bewegende site*/
+.bottommp3spacer {
+	clear: both;
+	margin: 0;
+	height:80px;
+
+}
+        </style>
+		
+<style type="text/css">
+/* styling voor de rechter lijsten */
+.right_body p {
+padding: 0 0 1em;
+}
+.right_menus {
+	margin: 0px;
+	padding: 0px;
+	width: 379px;
+	position: relative;
+	right: 0px;
+	top: 1px;
+	float: right;
+}
+
+
+
+.right_head {
+	cursor: pointer;
+	position: inherit;
+	background-color:#111111;
+	margin:0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #FFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	height: auto;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.koopknop {
+	display: block;
+	background-color: #999;
+	height: 15px;
+	width: 40px;
+	border: 2px outset #999;
+	padding: 1px;
+	float: left;
+}
+.right_body {
+	padding: 5px 10px 15px;
+	background-color:#CCC;
+}
+</style>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the element with class msg_body
+  $(".right_body").hide();
+  //toggle the componenet with class msg_body
+  $(".right_head").click(function()
+  {
+    $(this).next(".right_body").slideToggle(400);
+  });
+});
+</script>
+
+<%= stylesheet_link_tag "style" %>
+
+	</head>
+	<body>
+<div class="container"> 
+<div class="header"> </div>
+<div class="menu">
+<div class="leftmenu">
+	<ul class="nav">
+		<li class="nav1 drop"><a class="main" href="/home"><b>Home</b></a></li>
+		
+		<li class="nav3 drop"><a class="main down" href="/nummers"><b>Artiesten</b></a>
+	  <ul>
+				<li class="fly"><a class="main" href="#url"><b>#-F</b></a>
+					<ul>
+						<li><a href="#url"><b>0-9</b></a></li>
+						<li><a href="#url"><b>A</b></a></li>
+						<li><a href="#url"><b>B</b></a></li>
+						<li><a href="#url"><b>C</b></a></li>
+						<li><a href="#url"><b>D</b></a></li>
+						<li><a href="#url"><b>E</b></a></li>
+						<li><a href="#url"><b>F</b></a></li>
+					</ul>
+				</li>
+				<li class="fly"><a class="main" href="#url"><b>G-M</b></a>
+					<ul>
+						<li><a href="#url"><b>G</b></a></li>
+						<li><a href="#url"><b>H</b></a></li>
+						<li><a href="#url"><b>I</b></a></li>
+						<li><a href="#url"><b>J</b></a></li>
+						<li><a href="#url"><b>K</b></a></li>
+						<li><a href="#url"><b>L</b></a></li>
+						<li><a href="#url"><b>M</b></a></li>
+					</ul>
+				</li>
+				<li class="fly"><a class="main" href="#url"><b>N-T</b></a>
+					<ul>
+						<li><a href="#url"><b>N</b></a></li>
+						<li><a href="#url"><b>O</b></a></li>
+						<li><a href="#url"><b>P</b></a></li>
+						<li><a href="#url"><b>Q</b></a></li>
+						<li><a href="#url"><b>R</b></a></li>
+						<li><a href="#url"><b>S</b></a></li>
+						<li><a href="#url"><b>T</b></a></li>
+					</ul>
+				</li>
+				<li class="fly"><a class="main" href="#url"><b>U-Z</b></a>
+					<ul>
+						<li><a href="#url"><b>U</b></a></li>
+						<li><a href="#url"><b>V</b></a></li>
+						<li><a href="#url"><b>W</b></a></li>
+						<li><a href="#url"><b>X</b></a></li>
+						<li><a href="#url"><b>Y</b></a></li>
+						<li><a href="#url"><b>Z</b></a></li>
+					</ul>
+				</li>
+		  </ul>
+		</li>
+		<li class="nav3 drop"><a class="main down" href="/albums"><b>Albums</b></a>
+			<ul>
+						<li><a href="#url"><b>Nieuwe albums</b></a></li>
+						<li><a href="#url"><b>Best verkocht</b></a></li>
+						<li><a href="#url"><b>Uitgelicht</b></a></li>
+
+			</ul>
+		</li>
+		<li class="nav3 drop"><a class="main down" href="/nummers"><b>Genres</b></a>
+			<ul>				
+			<li class="fly"><a class="main" href="#url"><b>Overige</b></a>
+				<ul>
+						<li><a href="#url"><b>Blues</b></a></li>
+						<li><a href="#url"><b>Cabaret & Komedie</b></a></li>
+						<li><a href="#url"><b>Country</b></a></li>
+						
+						<li><a href="#url"><b>Diversen </b></a></li>
+						<li><a href="#url"><b>Folk </b></a></li>
+						
+						<li><a href="#url"><b>Kind & Jeugd </b></a></li>
+						
+						
+						<li><a href="#url"><b>New Age </b></a></li>
+						
+						<li><a href="#url"><b>Rap & Hip Hop </b></a></li>
+						<li><a href="#url"><b>R&B & Soul </b></a></li>
+						<li><a href="#url"><b>Reggae </b></a></li>
+						<li><a href="#url"><b>Religieus </b></a></li>
+						
+						<li><a href="#url"><b>Soundtracks & Musicals </b></a></li>
+						<li><a href="#url"><b>Verzamel-cd's & Boxsets </b></a></li>
+						<li><a href="#url"><b>Wereldmuziek</b></a></li>
+				</ul>
+			</li>
+			<li><a href="#url"><b>Pop </b></a></li>
+			<li><a href="#url"><b>Klassiek </b></a></li>
+			<li><a href="#url"><b>Nederlands </b></a></li>
+			<li><a href="#url"><b>Rock & Alternative </b></a></li>
+			<li><a href="#url"><b>Jazz </b></a></li>
+			<li><a href="#url"><b>Dance </b></a></li>
+				
+			</ul>
+		</li>
+		<li class="nav2 drop"><a class="main" href="#url"><b>Charts</b></a>
+
+		</li>
+		
+		<li class="nav5 drop"><a class="main" href="#url"><b>Disclaimer</b></a></li>
+	</ul>
+</div>
+<div class="login">
+<form>
+<label for="email" accesskey="e">&nbsp;email:</label> <input type="text" name="firstname" class="input"/><label for="wachtwoord" accesskey="w"> wachtwoord:</label> <input type="password" name="lastname" class="input"/> <div class="button">
+  <input type="submit" value="login">
+</div></form>
+</div>
+<div class="searchmenu">
+<ul class="nav">
+<li class="nav4 drop"><a class="main down" href="/klants"><b>User</b></a>
+			<ul>
+				<li><a href="#url"><b>Winkelmandje</b></a></li>
+				<li><a href="#url"><b>Aankopen</b></a></li>
+				<li><a href="#url"><b>Voorkeuren</b></a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</div>
+
+<div class="inhoud"> <!-- alles onde het menu-->
+
+  <div class="inhoud_text_links"> <!-- hier komen de views-->
+  <%= yield -%>
+</div>
+
+<div class="right_menus"><!-- rechter uitvouw deel, zoek nieuw top--><p class="right_head">Zoeken</p><div class="right_body">
+
+
+
+<form action="" method="get">
+<table width="342" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td width="47">artiest:</td>
+    <td width="283"><input name="Artiest" type="text" class="zoekveld_rechts" size="10"></td>
+  </tr>
+  <tr>
+    <td>album: </td>
+    <td><input name="Album" type="text" class="zoekveld_rechts" size="10"></td>
+  </tr>
+  <tr>
+    <td>song:</td>
+    <td><input name="Song" type="text" class="zoekveld_rechts" size="10">
+      <input name="zoek" type="submit" value="Zoek" class="zoekveld_submit"></td>
+  </tr>
+</table>
+</form>
+</div>
+<p class="right_head">Uitgelichte albums</p>
+<div class="right_body">
+<table width="360" border="0" cellspacing="0" cellpadding="3" bgcolor="#FFFFFF" >
+  <tr>
+    <td width="100" rowspan="5" bgcolor="#FFFFFF"><img src="cover.jpg" width="100" height="100"></td>
+    <td width="35">artiest:</td>
+    <td width="199">Monolake</td>
+  </tr>
+  <tr>
+    <td>album:</td>
+    <td>Hong Kong</td>
+  </tr>
+  <tr>
+    <td>genre:</td>
+    <td>Ambient</td>
+  </tr>
+  <tr>
+    <td>prijs:</td>
+    <td>12,- euro</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="koopknop"> kopen</div> </td>
+  </tr>
+</table>
+<br />
+<table width="360" border="0" cellspacing="0" cellpadding="3" bgcolor="#ffffff">
+  <tr>
+    <td width="100" rowspan="5" bgcolor="#FFFFFF"><img src="front.jpg" width="100" height="100"></td>
+    <td width="35">artiest:</td>
+    <td width="199">Systems Officer</td>
+  </tr>
+  <tr>
+    <td>album:</td>
+    <td>Underslept</td>
+  </tr>
+  <tr>
+    <td>genre:</td>
+    <td>Rock</td>
+  </tr>
+  <tr>
+    <td>prijs:</td>
+    <td>goedkoop</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="koopknop"> kopen</div> </td>
+  </tr>
+</table>
+
+</div>
+<p class="right_head">Nieuwe albums</p>
+<div class="right_body">
+<table width="360" border="0" cellspacing="0" cellpadding="3" bgcolor="#FFFFFF" >
+  <tr>
+    <td width="100" rowspan="5" bgcolor="#FFFFFF"><img src="cover.jpg" width="100" height="100"></td>
+    <td width="35">artiest:</td>
+    <td width="199">Monolake</td>
+  </tr>
+  <tr>
+    <td>album:</td>
+    <td>Hong Kong</td>
+  </tr>
+  <tr>
+    <td>genre:</td>
+    <td>Ambient</td>
+  </tr>
+  <tr>
+    <td>prijs:</td>
+    <td>12,- euro</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="koopknop"> kopen</div> </td>
+  </tr>
+</table>
+<br />
+<table width="360" border="0" cellspacing="0" cellpadding="3" bgcolor="#ffffff">
+  <tr>
+    <td width="100" rowspan="5" bgcolor="#FFFFFF"><img src="front.jpg" width="100" height="100"></td>
+    <td width="35">artiest:</td>
+    <td width="199">Systems Officer</td>
+  </tr>
+  <tr>
+    <td>album:</td>
+    <td>Underslept</td>
+  </tr>
+  <tr>
+    <td>genre:</td>
+    <td>Rock</td>
+  </tr>
+  <tr>
+    <td>prijs:</td>
+    <td>goedkoop</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="koopknop"> kopen</div> </td>
+  </tr>
+</table>
+
+</div>
+<p class="right_head">Meest verkocht</p>
+<div class="right_body">
+<table width="360" border="0" cellspacing="0" cellpadding="3" bgcolor="#FFFFFF" >
+  <tr>
+    <td width="100" rowspan="5" bgcolor="#FFFFFF"><img src="Dixon temporary Secretary.jpg" width="100" height="100"></td>
+    <td width="35">artiest:</td>
+    <td width="199">Dixon</td>
+  </tr>
+  <tr>
+    <td>album:</td>
+    <td>Temmporary Secretary</td>
+  </tr>
+  <tr>
+    <td>genre:</td>
+    <td>House</td>
+  </tr>
+  <tr>
+    <td>prijs:</td>
+    <td>12,- euro</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="koopknop"> kopen</div> </td>
+  </tr>
+</table>
+<br>
+<table width="360" border="0" cellspacing="0" cellpadding="3" bgcolor="#ffffff">
+  <tr>
+    <td width="100" rowspan="5" bgcolor="#FFFFFF"><img src="Folder.jpg" width="100" height="100"></td>
+    <td width="35">artiest:</td>
+    <td width="199">Len Faki</td>
+  </tr>
+  <tr>
+    <td>album:</td>
+    <td>Berghain 03</td>
+  </tr>
+  <tr>
+    <td>genre:</td>
+    <td>Techno</td>
+  </tr>
+  <tr>
+    <td>prijs:</td>
+    <td>13,- euro</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div class="koopknop"> kopen</div> </td>
+  </tr>
+</table>
+</div>
+</div>
+<div id="footer"></div>
+<div class="bottommp3spacer"></div>
+</div>
+
+<div class="bgwhite">
+
+</div>
+
+<div class="mp3player">MP3</div>
+</div>
+
+
+</body>
+</html>

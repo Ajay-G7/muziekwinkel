@@ -1,6 +1,8 @@
 class KlantsController < ApplicationController
   # GET /klants
   # GET /klants.xml
+    layout 'standard'
+  
   def index
     @klants = Klant.find(:all)
 

@@ -1,6 +1,8 @@
 class CommentaarsController < ApplicationController
   # GET /commentaars
   # GET /commentaars.xml
+    layout 'standard'
+  
   def index
     @commentaars = Commentaar.find(:all)
 

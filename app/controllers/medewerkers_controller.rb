@@ -1,6 +1,8 @@
 class MedewerkersController < ApplicationController
   # GET /medewerkers
   # GET /medewerkers.xml
+    layout 'standard'
+  
   def index
     @medewerkers = Medewerker.find(:all)
 

@@ -21,7 +21,7 @@
   </p>
   <p>
     <%= f.label :album %><br />
-    <%= f.collection_select :album_id, Album.find(:all), :id, :titel %>
+    <%= f.collection_select :album_id, @albums, :id, :titel %>
   </p>
   <p>
     <%= f.label :genre %><br />
