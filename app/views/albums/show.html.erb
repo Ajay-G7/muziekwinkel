@@ -1,43 +1,45 @@
-<p>
-  <b>Titel:</b>
-  <%=h @album.titel %>
-</p>
-
-<p>
-  <b>Prijs:</b>
-  <%=h @album.prijs %>
-</p>
-
-<p>
-  <b>Jaar:</b>
-  <%=h @album.jaar %>
-</p>
-
-<p>
-  <b>Artiest:</b>
-  <%=h @album.artiest %>
-</p>
-
-<p>
-  <b>Genre:</b>
-  <%=h @album.genre %>
-</p>
-
-<p>
-  <b>Lengte:</b>
-  <%=h @album.lengte %>
-</p>
-
-<p>
-  <b>Coverart:</b>
-  <img src="<%=h @album.coverart %>" height="200px">
-</p>
-
-<h2>Nummers:</h2>
-<%= render :partial => 'nummers/index' %>
-
-<h2>Commentaar:</h2>
-<%= render :partial => 'commentaars/index' %>
+<div style="background-color:#ccc; width:550px; padding:10px">
+<table width="540px" border="0" align="center" cellpadding="2">
+  <tr>
+    <td width="175px" rowspan="7" valign="top" bgcolor="#ffffff"><img src="<%=h @album.coverart %>" width="175" height="175" hspace="0" vspace="0" border="0"></td>
+    <td width="77" bgcolor="#ffffff"><strong>Artiest:</strong></td>
+    <td width="221" bgcolor="#ffffff"><%=h @album.artiest %></td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff"><strong>Titel:</strong></td>
+    <td bgcolor="#ffffff"><%=h @album.titel %></td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff"><strong>Lengte:</strong></td>
+    <td bgcolor="#ffffff"><%=h @album.lengte %></td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff"><strong>Genre:</strong></td>
+    <td bgcolor="#ffffff"><%=h @album.genre %></td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffffff"><strong>Jaar:</strong></td>
+    <td bgcolor="#ffffff"><%=h @album.jaar %></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#ffffff"><strong>Prijs:</strong></td>
+    <td valign="top" bgcolor="#ffffff"><%=h @album.prijs %></td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"><strong>Tracks:</strong></td>
+    <td colspan="2" valign="top" bgcolor="#ffffff"><%= render :partial => 'nummers/index' %></td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"><strong>Commentaar:</strong></td>
+    <td colspan="2" valign="top" bgcolor="#ffffff"><%= render :partial => 'commentaars/index' %></td>
+  </tr>
+</table>
+</div>
+<br />
 
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
