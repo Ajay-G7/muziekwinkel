@@ -1,11 +1,12 @@
-<table cellpadding="0">
+<table cellpadding="0" width="356px">
 
 <% for nummer in @album.nummers.sort_by { |n| n.tracknr } %>
   <tr>
     <td><%= h nummer.tracknr %>.&nbsp; </td>
-	    <td><%= h nummer.artiest %>&nbsp;-&nbsp;</td>
-    <td><%= h nummer.titel %>&nbsp; </td>
-
+	    <td width="auto"><%= h nummer.artiest %>&nbsp;-&nbsp;</td>
+    <td align="left"><%= h nummer.titel %>&nbsp;</td>
+	    <td align="right" ><%= h nummer.lengte %> </td>
+<td width="81px"align="right"><a href="<%= h nummer.titel %>"><div class="playknop"></div></a><div class="numkoopknop"></div></td>
   </tr>
 <% end %>
 

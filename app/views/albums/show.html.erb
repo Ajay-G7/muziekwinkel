@@ -1,9 +1,9 @@
-<div style="background-color:#ccc; width:550px; padding:10px">
-<table width="540px" border="0" align="center" cellpadding="2">
+<div style="background-color:#ccc; width:559px; padding:10px">
+<table width="559px" border="0" align="center" cellpadding="2">
   <tr>
-    <td width="175px" rowspan="7" valign="top" bgcolor="#ffffff"><img src="<%=h @album.coverart %>" width="175" height="175" hspace="0" vspace="0" border="0"></td>
-    <td width="77" bgcolor="#ffffff"><strong>Artiest:</strong></td>
-    <td width="221" bgcolor="#ffffff"><%=h @album.artiest %></td>
+    <td width="175px" rowspan="9" valign="top" bgcolor="#ffffff"><%= image_tag((@album.coverart or 'default-album.jpg'), :width => '175px', :height => '175px', :vspace => '7px', :hspace => '7px') %></td>
+    <td width="62px" bgcolor="#ffffff"><strong>Artiest:</strong></td>
+    <td bgcolor="#ffffff"><%=h @album.artiest %></td>
   </tr>
   <tr>
     <td bgcolor="#ffffff"><strong>Titel:</strong></td>
@@ -21,13 +21,22 @@
     <td bgcolor="#ffffff"><strong>Jaar:</strong></td>
     <td bgcolor="#ffffff"><%=h @album.jaar %></td>
   </tr>
-  <tr>
-    <td valign="top" bgcolor="#ffffff"><strong>Prijs:</strong></td>
-    <td valign="top" bgcolor="#ffffff"><%=h @album.prijs %></td>
+    <tr>
+    <td bgcolor="#ffffff"><strong>waardering:</strong></td>
+    <td bgcolor="#ffffff"><%=@album.commentaar.average(:rating)%></td>
   </tr>
   <tr>
-    <td valign="top">&nbsp;</td>
-    <td valign="top">&nbsp;</td>
+    <td bgcolor="#ffffff"><strong>Prijs:</strong></td>
+    <td bgcolor="#ffffff">&euro;<%=h @album.prijs %></td>
+  </tr>
+
+  <tr>
+  <td ></td>
+<td bgcolor=""><div class="playknop"></div><div class="numkoopknop"></div></td>
+</tr>
+    <tr>
+    <td ><strong></strong></td>
+    <td ></td>
   </tr>
   <tr>
     <td align="right" valign="top"><strong>Tracks:</strong></td>
@@ -38,8 +47,6 @@
     <td colspan="2" valign="top" bgcolor="#ffffff"><%= render :partial => 'commentaars/index' %></td>
   </tr>
 </table>
-</div>
-<br />
-
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
+</div>

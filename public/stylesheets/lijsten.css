@@ -2,6 +2,9 @@
 .right_body p {
     padding:                0 0 1em;
 }
+.rightsearch_body p {
+    padding:                0 0 1em;
+}
 
 .right_menus {
     margin:                 0px;
@@ -13,7 +16,31 @@
     float:                  right;
 }
 
+
 .right_head {
+    cursor:                 pointer;
+    position:               inherit;
+    background-color:       #111111;
+    margin:                 0px;
+    font-family:            Verdana, Geneva, sans-serif;
+    font-size:              12px;
+    font-weight:            normal;
+    font-style:             normal;
+    text-transform:         uppercase;
+    color:                  #FFF;
+    border-bottom-width:    1px;
+    border-bottom-style:    solid;
+    border-top-color:       #CCC;
+    border-right-color:     #CCC;
+    border-bottom-color:    #CCC;
+    border-left-color:      #CCC;
+    height:                 auto;
+    padding-top:            5px;
+    padding-right:          10px;
+    padding-bottom:         5px;
+    padding-left:           10px;
+}
+.rightsearch_head {
     cursor:                 pointer;
     position:               inherit;
     background-color:       #111111;
@@ -46,8 +73,46 @@
     padding:                1px;
     float:                  left;
 }
+.numkoopknop {
+    background:       url(../images/koopknop.jpg);
+	background-position: 	top;
+    height:                 19px;
+    width:                  50px;
+    border:                 0px outset;
+    padding:                0px;
+    float:                  left;
+}
+.numkoopknop:hover {
+ 	background-position: bottom;
+    height:                 19px;
+    width:                  50px;
+    border:                 0px outset;
+    padding:                0px;
+}
+.playknop {
+    background:       url(../images/playknop.jpg);
+	background-position: 	top;
+    height:                 19px;
+    width:                  31px;
+    border:                 0px outset;
+    padding:                0px;
+
+    float:                  left;
+}
+.playknop:hover {
+ 	background-position: bottom;
+    height:                 19px;
+    width:                  31px;
+    border:                 0px outset;
+    padding:                0px;
+}
 
 .right_body {
+    padding:                5px 10px 15px;
+    background-color:       #CCC;
+}
+
+.rightsearch_body {
     padding:                5px 10px 15px;
     background-color:       #CCC;
 }
