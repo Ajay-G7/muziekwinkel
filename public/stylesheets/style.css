@@ -23,7 +23,7 @@ body {
 
 /* logo komt hierin */
 .header {
-    background-color:   #999;
+	background-image:   url("/images/header4.jpg");
     padding:            0px;
     margin-left:        auto;
     margin-right:       auto;
@@ -169,7 +169,7 @@ body {
 
 /* linker inhoud */
 .inhoud_text_links {
-    padding:            5px;
+    padding:            0px;
     height:             auto;
     width:              569px;
     position:           relative;
