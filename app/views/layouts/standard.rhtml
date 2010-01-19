@@ -24,9 +24,6 @@ $(document).ready(function()
  });
 </script>
 
-
-
-
 </head>
 <body>
 <div class="container"> 
@@ -85,10 +82,10 @@ $(document).ready(function()
         </li>
         <li class="nav3 drop"><a class="main down" href="/albums"><b>Albums</b></a>
             <ul>
-                        <li><a href=" "><b>Nieuwe albums</b></a></li>
-						<li><a href=" "><b>Uitgelicht</b></a></li>
-                        <li><a href=" "><b>Best verkocht</b></a></li>
-					    <li><a href=" "><b>Hoogst gewaardeerd</b></a></li>
+                        <li><a href="#url"><b>Nieuwe albums</b></a></li>
+						<li><a href="#url"><b>Uitgelicht</b></a></li>
+                        <li><a href="#url"><b>Best verkocht</b></a></li>
+					    <li><a href="#url"><b>Hoogst gewaardeerd</b></a></li>
             </ul>
         </li>
         <li class="nav3 drop"><a class="main down" href="/nummers"><b>Genres</b></a>
@@ -149,7 +146,7 @@ $(document).ready(function()
   <%= yield -%>
 </div>
 
-<div class="right_menus" id="right_menus"><!-- rechter uitvouw deel, zoek nieuw top-->
+<div class="right_menus"><!-- rechter uitvouw deel, zoek nieuw top-->
 <p class="rightsearch_head">Zoeken</p><div class="rightsearch_body">
 
 <form action="/search" method="get">
@@ -337,10 +334,10 @@ $(document).ready(function()
         codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,22,0"
         id="SimpleMP3_01"
         width="960" height="80">
-        <param name="movie" value="SimpleMP3_01.swf" />
-        <param name="bgcolor" value="#222222" />
-        <param name="quality" value="high" />
-        <param name="allowscriptaccess" value="samedomain" />
+        <param name="movie" value="SimpleMP3_01.swf">
+        <param name="bgcolor" value="#222222">
+        <param name="quality" value="high">
+        <param name="allowscriptaccess" value="samedomain">
         <embed
 		  type="application/x-shockwave-flash"
           pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"

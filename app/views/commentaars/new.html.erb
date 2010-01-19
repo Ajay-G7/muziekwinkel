@@ -2,7 +2,6 @@
 
 <% form_for(@commentaar) do |f| %>
   <%= f.error_messages %>
-
     <p>
     <%= f.label :product %><br />
     <%= f.collection_select :product_id, Product.find(:all).sort_by {|item| item.titel}, :id, :titel %>
