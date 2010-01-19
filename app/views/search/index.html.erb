@@ -5,12 +5,14 @@
     <th>Titel</th>
     <th>Artiest</th>
     <th>Prijs</th>
+	<th></th>
   </tr>
 <% for product in @products %>
   <tr>
     <td><%= product.titel %></td>
     <td><%= product.artiest %></td>
     <td><%= product.prijs %></td>
-  </tr>
+    <td><%= link_to 'Show', product %></td>
+ </tr>
 <% end %>
 </table>

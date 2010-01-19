@@ -1,10 +1,9 @@
-<h1>Listing albums</h1>
-
+<div style="background-color:#ccc; width:559px; padding:10px">
 <% for album in @albums %>
-<table width="559px">
+<table width="559px" bgcolor="#ffffff">
  <tr>
-    <td width="100px" rowspan="6"><%= image_tag((album.coverart or 'default-album.jpg'), :width => '100px', :height => '100px') %></td>
-    <td width="50px">artiest:</td>
+    <td width="100px" rowspan="6"><%= link_to image_tag((album.coverart or 'default-album.jpg'), :width => '100px', :height => '100px', :vspace => '3px', :hspace => '3px', :border => '0px'), :action => 'show', :id => album %></td>
+    <td width="50px">Artiest:</td>
     <td><%=h album.artiest %>&nbsp;</td>
   </tr>
   <tr>
@@ -24,16 +23,21 @@
     <td><%=h album.genre %>&nbsp;</td>
   </tr>
   <tr>
-    <td>Prijs:</td>
-    <td><%=h album.prijs %>&nbsp;</td>
+  	<td>Tracks:</td>
+    <td><%=album.nummers.count(:tracknr)%></td>
   </tr>
-    <td><br /></td>
-    <td>Acties:</td>
+    <tr>
+    <td><div class="playknop" style="margin-left:4px; margin-bottom:2px"></div><div class="numkoopknop"></div></td>
+    <td>Prijs:</td>
+    <td>&euro;<%=h album.prijs %></td>
+  </tr>
+    
+    <td></td>
     <td><%= link_to 'Show', album %> <%= link_to 'Edit', edit_album_path(album) %> <%= link_to 'Destroy', album, :confirm => 'Are you sure?', :method => :delete %></td>
-    <td><br /><br /></td>
+    <td></td>
 </tr>
 </table>
 <br />
 <% end %>
-
 <%= link_to 'New album', new_album_path %>
+</div>
